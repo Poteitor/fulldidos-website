@@ -1,155 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="bg-zinc-950 text-white antialiased">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guilda Fulldidos - Warborne</title>
+  <title>Guilda Fulldidos</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="bg-zinc-950 text-zinc-100 selection:bg-fuchsia-400/30 selection:text-white">
 
-  <!-- Header -->
-  <header class="border-b border-white/5 bg-zinc-900/50 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold tracking-wide text-fuchsia-400">⚔️ Fulldidos</h1>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="#sobre" class="hover:text-fuchsia-400">Sobre</a>
-        <a href="#valores" class="hover:text-fuchsia-400">Valores</a>
-        <a href="#videos" class="hover:text-fuchsia-400">Vídeos</a>
-        <a href="#recrutamento" class="hover:text-fuchsia-400">Recrutamento</a>
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-zinc-950/60 border-b border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://i.imgur.com/LDyF6Da.png" alt="Logo" class="h-9 w-9 rounded-md ring-1 ring-white/10 object-contain">
+        <span class="font-black tracking-tight text-lg sm:text-xl">Fulldidos</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-zinc-300">
+        <a href="#origem" class="hover:text-white">Origem</a>
+        <a href="#valores" class="hover:text-white">Valores</a>
+        <a href="#recrutamento" class="hover:text-white">Recrutamento</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
       </nav>
+      <a href="https://discord.gg/DtzQdvUs8R" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-4 py-2 font-semibold shadow-lg shadow-fuchsia-500/20 transition">
+        Discord
+      </a>
     </div>
   </header>
 
-  <main class="flex-grow">
-
-    <!-- Hero -->
-    <section class="relative bg-gradient-to-b from-zinc-900/80 to-zinc-950 py-24 text-center">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-black">A revolução no Warborne começou</h2>
-        <p class="mt-6 text-lg text-zinc-300">Somos a Guilda Fulldidos — unidos pela guerra, movidos pela honra e preparados para dominar.</p>
-        <div class="mt-8">
-          <a href="https://discord.gg/w6235Xyeqb" target="_blank" 
-             class="inline-block rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-6 py-3 font-semibold shadow-lg shadow-fuchsia-500/20 transition">
-             🎮 Entrar na Guilda
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" class="border-t border-white/5 bg-zinc-900/40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-black">Quem somos</h2>
-        <p class="mt-4 text-zinc-300 leading-relaxed">
-          A Fulldidos é uma comunidade de jogadores experientes, presente em diversos jogos e agora reunida para conquistar o Warborne. 
-          Participamos dos betas, vencemos batalhas e criamos a maior estrutura de apoio para nossos membros. 
-          Nosso objetivo é claro: ser referência em organização, força e união.
+  <!-- Hero -->
+  <section class="relative isolate overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="inline-block rounded-full bg-fuchsia-500/10 ring-1 ring-fuchsia-500/30 px-3 py-1 text-xs font-semibold text-fuchsia-300">Guilda brasileira</p>
+        <h1 class="mt-5 text-4xl sm:text-5xl font-black tracking-tight leading-tight">
+          Jogue livre. Lute junto. <span class="text-fuchsia-400">Seja Fulldidos.</span>
+        </h1>
+        <p class="mt-5 text-zinc-300 max-w-prose">
+          Uma guilda auto-sustentável criada por jogadores e para jogadores. Sem comando rígido: aqui todo mundo tem voz e participa das decisões.
         </p>
-      </div>
-    </section>
-
-    <!-- Valores -->
-    <section id="valores" class="border-t border-white/5 bg-zinc-900/60">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-black">Nossos valores</h2>
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <h3 class="font-bold text-fuchsia-400">Honra</h3>
-            <p class="mt-2 text-zinc-300 text-sm">Respeito e ética em todas as batalhas.</p>
-          </div>
-          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <h3 class="font-bold text-fuchsia-400">Força</h3>
-            <p class="mt-2 text-zinc-300 text-sm">Organização e estratégia em cada movimento.</p>
-          </div>
-          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
-            <h3 class="font-bold text-fuchsia-400">União</h3>
-            <p class="mt-2 text-zinc-300 text-sm">Crescemos juntos como um só time.</p>
-          </div>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="https://discord.gg/DtzQdvUs8R" target="_blank" class="rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-6 py-3 font-semibold shadow-lg shadow-fuchsia-500/20">Entrar no Discord</a>
+          <a href="#origem" class="rounded-2xl bg-white/5 hover:bg-white/10 px-6 py-3 font-semibold ring-1 ring-white/10">Conhecer a origem</a>
         </div>
       </div>
-    </section>
+      <div class="relative">
+        <div class="absolute -inset-6 bg-fuchsia-500/10 blur-3xl rounded-full" aria-hidden="true"></div>
+        <img src="https://i.imgur.com/LDyF6Da.png" alt="Fulldidos" class="relative w-full max-w-xl mx-auto drop-shadow-[0_0_40px_rgba(217,70,239,0.25)]">
+      </div>
+    </div>
+  </section>
 
-    <!-- Vídeos -->
-    <section id="videos" class="border-t border-white/5 bg-zinc-900/40">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-black tracking-tight">Vídeos da Guilda</h2>
-        <p class="mt-4 text-zinc-300">Assista aos nossos melhores momentos em guerras, eventos e conquistas no Warborne.</p>
-
-        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Vídeo 1 -->
-          <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID1" 
-              title="Video da Guilda 1" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-          </div>
-
-          <!-- Vídeo 2 -->
-          <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID2" 
-              title="Video da Guilda 2" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-          </div>
-
-          <!-- Vídeo 3 -->
-          <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID3" 
-              title="Video da Guilda 3" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <!-- Botão adicional -->
-        <div class="mt-8 text-center">
-          <a href="https://www.youtube.com/@SeuCanal" target="_blank" 
-             class="inline-block rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-6 py-3 font-semibold shadow-lg shadow-fuchsia-500/20 transition">
-             📺 Ver mais no YouTube
-          </a>
+  <!-- Origem -->
+  <section id="origem" class="border-t border-white/5 bg-zinc-900/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h2 class="text-3xl font-black tracking-tight">Origem</h2>
+        <p class="mt-4 text-zinc-300 leading-relaxed">
+          A Fulldidos nasceu da vontade de jogar livre, sem amarras e sem ordens impostas. Não seguimos um líder distante nem um comando rígido—aqui todos têm voz. Nossa guilda é auto-sustentável, feita por jogadores para jogadores.
+        </p>
+        <p class="mt-4 text-zinc-300 leading-relaxed">
+          Os líderes são parte da comunidade, não chefes. Eles estão lado a lado em cada batalha, conversando, ouvindo e jogando com todos. Essa é a nossa essência: união, liberdade e força coletiva. É assim que crescemos, é assim que conquistamos.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://discord.gg/DtzQdvUs8R" target="_blank" class="rounded-xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-5 py-2.5 font-semibold shadow-lg shadow-fuchsia-500/20">Juntar-se</a>
+          <a href="#valores" class="rounded-xl bg-white/5 hover:bg-white/10 px-5 py-2.5 font-semibold ring-1 ring-white/10">Nossos valores</a>
         </div>
       </div>
-    </section>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">Comunidade ativa</div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">PT CORE</div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">Mentorias para iniciantes</div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">Times PvE e PvP</div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">Sistema de cargos flexível</div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-4 text-sm text-zinc-300">Ambiente respeitoso</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Recrutamento -->
-    <section id="recrutamento" class="border-t border-white/5 bg-gradient-to-b from-zinc-900/60 to-zinc-950">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl font-black tracking-tight">Recrutamento</h2>
-          <p class="mt-4 text-zinc-300 leading-relaxed">
-            Procuramos jogadores comprometidos com o coletivo. Não exigimos nível mínimo, apenas respeito, maturidade e vontade de evoluir.
-          </p>
-          <ul class="mt-6 space-y-2 text-zinc-300 text-sm">
-            <li>• Idade mínima sugerida: 16+</li>
-            <li>• Microfone para comunicação em grupo</li>
-            <li>• Presença em eventos (quando possível)</li>
-            <li>• Seguir as diretrizes no Discord</li>
-          </ul>
-          <a href="https://discord.gg/w6235Xyeqb" target="_blank" 
-             class="mt-8 inline-block rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-6 py-3 font-semibold shadow-lg shadow-fuchsia-500/20 transition">
-             ⚔️ Aplicar agora
-          </a>
+  <!-- Valores -->
+  <section id="valores" class="border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-black tracking-tight">Valores</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+          <h3 class="font-bold text-lg">União acima de tudo</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Crescemos juntos. Sem amarras, sem ordens impostas—respeito e parceria em cada batalha.</p>
         </div>
         <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
-          <h3 class="font-bold">Diretrizes rápidas</h3>
-          <ol class="mt-3 list-decimal list-inside text-zinc-300 text-sm space-y-1">
-            <li>Respeito é inegociável.</li>
-            <li>Sem trapaças, exploits ou atitudes tóxicas.</li>
-            <li>Ajude novos membros — somos um time.</li>
-            <li>Canais estratégicos devem ser seguidos em guerras/eventos.</li>
-          </ol>
+          <h3 class="font-bold text-lg">Liberdade para jogar</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Sem hierarquia rígida: aqui todo mundo tem voz e escolhe como quer contribuir.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+          <h3 class="font-bold text-lg">Gestão transparente</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Decisões são discutidas com a comunidade. Liderança é serviço, não trono.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Recrutamento -->
+  <section id="recrutamento" class="border-t border-white/5 bg-gradient-to-b from-zinc-900/60 to-zinc-950">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-black tracking-tight">Recrutamento</h2>
+        <p class="mt-4 text-zinc-300 leading-relaxed">
+          Procuramos jogadores comprometidos com o coletivo. Não exigimos nível mínimo, apenas respeito, maturidade e vontade de evoluir.
+        </p>
+        <ul class="mt-6 space-y-2 text-zinc-300 text-sm">
+          <li>• Idade mínima sugerida: 16+</li>
+          <li>• Microfone para comunicação em grupo</li>
+          <li>• Presença em eventos (quando possível)</li>
+          <li>• Seguir as diretrizes no Discord</li>
+        </ul>
+        <a href="https://discord.gg/seu-convite" target="_blank" class="mt-8 inline-block rounded-2xl bg-fuchsia-500/90 hover:bg-fuchsia-500 px-6 py-3 font-semibold shadow-lg shadow-fuchsia-500/20">Aplicar agora</a>
+      </div>
+      <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+        <h3 class="font-bold">Diretrizes rápidas</h3>
+        <ol class="mt-3 list-decimal list-inside text-zinc-300 text-sm space-y-1">
+          <li>Respeito é inegociável.</li>
+          <li>Sem trapaças, exploits ou atitudes tóxicas.</li>
+          <li>Ajude novos membros—somos um time.</li>
+          <li>Canais estratégicos devem ser seguidos em guerras/eventos.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-black tracking-tight">Perguntas Frequentes</h2>
+      <div class="mt-8 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+          <h3 class="font-semibold">Como entro na Guilda?</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Entre no nosso Discord e siga o canal #recrutamento. Um coordenador vai orientar seu processo.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+          <h3 class="font-semibold">Tem requisitos?</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Atitude positiva, vontade de jogar em equipe e respeito às diretrizes.</p>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/5 border border-white/10">
+          <h3 class="font-semibold">Quais jogos/servidores?</h3>
+          <p class="mt-2 text-zinc-300 text-sm leading-relaxed">Jogamos principalmente em servidores da comunidade (incluindo Eterium) e eventos sazonais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Vídeos -->
+<section id="videos" class="border-t border-white/5 bg-zinc-900/40">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-black tracking-tight">Vídeos da Guilda</h2>
+    <p class="mt-4 text-zinc-300">Aqui você pode conferir nossos vídeos de batalhas, eventos e momentos marcantes.</p>
+
+    <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Vídeo 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID1" 
+          title="Video da Guilda 1" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Vídeo 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID2" 
+          title="Video da Guilda 2" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Vídeo 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-lg shadow-fuchsia-500/20 border border-white/10 bg-white/5">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SeuVideoID3" 
+          title="Video da Guilda 3" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
-  <footer class="border-t border-white/5 bg-zinc-900/50 py-6 text-center text-sm text-zinc-400">
-    <p>© 2025 Fulldidos. Todos os direitos reservados.</p>
+  <footer class="border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="https://i.imgur.com/LDyF6Da.png" alt="Logo" class="h-8 w-8 rounded-md ring-1 ring-white/10 object-contain">
+        <p class="text-sm text-zinc-400">© 2025 Fulldidos. Feito por jogadores para jogadores.</p>
+      </div>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="https://discord.gg/seu-convite" target="_blank" class="hover:underline">Discord</a>
+        <a href="#recrutamento" class="hover:underline">Recrutamento</a>
+        <a href="#origem" class="hover:underline">Origem</a>
+      </div>
+    </div>
   </footer>
 
 </body>
 </html>
+
+
 
